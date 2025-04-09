@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a, nav button {
+  color: white;
+  background: #3b82f6;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card {
+  background: white;
+  padding: 15px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 5px;
+}
+
+#edit-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#edit-form input, #edit-form textarea, #edit-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+}

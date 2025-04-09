@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Project</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Edit Project</h1>
+
+  <form action="/projects/<%= project.id %>?_method=PUT" method="POST">
+    <label for="title">Project Title:</label><br>
+    <input type="text" id="title" name="title" value="<%= project.title %>" required><br><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="5" required><%= project.description %></textarea><br><br>
+
+    <button type="submit">Save Changes</button>
+    <a href="/projects"><button type="button">Cancel</button></a>
+  </form>
+</body>
+</html>
